@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1BEC996-9E1F-49B7-8EBA-932525C03CA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kagan_Bartu_Eken_MHRS</RootNamespace>
+    <AssemblyName>Kagan_Bartu_Eken_MHRS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Giriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş.Designer.cs">
+      <DependentUpon>Giriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü.Designer.cs">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Randevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Randevu.Designer.cs">
+      <DependentUpon>Randevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kayıt.Designer.cs">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Giriş.resx">
+      <DependentUpon>Giriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü.resx">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Randevu.resx">
+      <DependentUpon>Randevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kayıt.resx">
+      <DependentUpon>Kayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28-12-12-6_4c970f2f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MHRS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MHRS_Logo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28-12-12-6_4c970f2f1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v870-tang-36_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MHRS_Logo_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_251625725_Rn45uiFslh3l2RCMGXBpLip1ispIM1Re.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saglik-bakanligi-png-logo-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_293370745_WlLOwxyzVeAGl0AlDngXQgXdr6MpXfit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-user-profile-computer-icons-login-user-avatars-5b0d943145b5c4.6135737115276165612855.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_icon_BLACK-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-Drake-Healthcare-and-Medical-Free-PPT-Background-by-SlidesCorner.com_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sbLogoKırmızı.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-and-healthcare-background-in-blue-color-vector-32773679.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
